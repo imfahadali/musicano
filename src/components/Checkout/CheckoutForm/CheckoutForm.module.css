@@ -1,0 +1,90 @@
+.checkout-form-container {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.checkout-form-item {
+  height: 85vh;
+  width: 40%;
+  padding: 2.5rem;
+  margin: 2.5rem;
+  flex: 1;
+}
+.checkout-form-item > h2 {
+  text-align: center;
+}
+
+.checkout-form-item:nth-child(2) {
+  border-left: 1px solid rgb(179, 175, 175);
+}
+
+.checkout-form-item > form > button,
+.checkout-form-item > form > input,
+.inline-wrapper > div > input,
+.checkout-form-item > form > textarea,
+.error {
+  margin: 0.5rem;
+  font-size: 0.8rem;
+  padding: 0.5rem;
+  width: 100%;
+  border: 1px solid rgb(174, 168, 168);
+  border-radius: 2px;
+}
+
+.inline-wrapper {
+  display: flex;
+  width: 100%;
+}
+.inline-detail {
+  display: flex;
+  width: 50%;
+  flex-direction: column;
+}
+.inline-detail:first-child {
+  margin-right: 1rem;
+}
+.inline-detail > input {
+  width: 100%;
+}
+.checkout-form-item > form > button {
+  background-color: black;
+  color: white;
+}
+
+.error {
+  width: fit-content;
+  color: red;
+  font-size: 0.8rem;
+  border: none;
+  margin: 0;
+}
+
+.checkout-form-item > form > button:hover {
+  background-color: rgba(0, 0, 0, 0.85);
+  color: white;
+}
+
+input[type="number"]::-webkit-outer-spin-button,
+input[type="number"]::-webkit-inner-spin-button {
+  -webkit-appearance: none;
+  margin: 0;
+}
+
+@media (max-width: 1150px) {
+  .checkout-form-item {
+    margin-left: 15%;
+    margin-right: 15%;
+  }
+  .checkout-form-item:nth-child(2) {
+    display: none;
+  }
+}
+@media (max-width: 700px) {
+  .inline-wrapper {
+    flex-direction: column;
+  }
+  .inline-detail {
+    width: 100%;
+  }
+}

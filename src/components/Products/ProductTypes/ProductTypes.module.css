@@ -1,0 +1,86 @@
+.type-heading {
+  margin-top: 5rem;
+  font-family: Georgia, "Times New Roman", Times, serif;
+  text-align: center;
+}
+.type-container {
+  display: flex;
+  align-items: center;
+  height: calc(100vh - 10rem);
+  flex-wrap: wrap;
+  margin: 10rem;
+  margin-top: 0;
+}
+
+.type-item {
+  width: calc(50% - 20px);
+  height: 50%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  background-image: url("../../../../public/images/guitar1.jpg");
+  background-size: cover;
+  border-radius: 8px;
+  background-repeat: no-repeat;
+
+  box-sizing: border-box;
+  color: white;
+  text-shadow: 0px 0px 8px white;
+  background-color: rgba(0, 0, 0, 0.5);
+  background-blend-mode: multiply;
+  margin: 10px;
+  transition: transform 0.2s;
+  box-shadow: 0px 0px 14px rgb(95, 95, 95);
+  cursor: pointer;
+}
+
+.type-item:nth-child(1) {
+  background-image: url("../../../../public/images/guitar2fina.jpg");
+}
+.type-item:nth-child(2) {
+  background-image: url("../../../../public/images/piano1.jpg");
+}
+.type-item:nth-child(3) {
+  background-image: url("../../../../public/images/violin2.jpg");
+  /* border-top-right-radius: 0; */
+}
+.type-item:nth-child(4) {
+  background-image: url("../../../../public/images/drums1.jpg");
+  background-position: center;
+}
+
+.type-item:hover {
+  border: 1px solid rgb(22, 21, 21);
+  border-radius: 10px;
+  box-shadow: 0px 0px 20px grey;
+  transform: scale(1.1);
+}
+
+@media (max-width: 1550px) {
+  .type-item {
+    background-position: center;
+  }
+  .type-item:nth-child(1) {
+    background-position: right;
+  }
+}
+
+@media (max-width: 900px) {
+  .type-item {
+    height: 30%;
+  }
+}
+
+@media (max-width: 600px) {
+  .type-container {
+    flex-direction: column;
+    flex-wrap: nowrap;
+    margin: 0;
+  }
+}
+
+@media (max-width: 500px) {
+  .type-item {
+    width: 100vw;
+  }
+}

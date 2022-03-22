@@ -1,0 +1,39 @@
+.cart-contaier {
+  display: flex;
+}
+
+.order-action {
+  display: flex;
+  justify-content: flex-end;
+}
+
+.order-action > button {
+  background-color: black;
+  color: white;
+  margin: 5px;
+  padding: 5px 15px;
+  border-radius: 10px;
+}
+.order-action > button:hover {
+  background-color: rgba(0, 0, 0, 0.75);
+}
+
+/* 
+
+
+.actions button:hover,
+.actions button:active {
+  background-color: #f765a3;
+  border-color: #f765a3;
+  color: white;
+}
+
+.actions .button--alt {
+  color: #ffa4b6;
+  float: right;
+}
+
+.actions .button {
+  background-color: #ffa4b6;
+  color: white;
+} */

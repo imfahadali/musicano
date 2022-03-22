@@ -1,0 +1,45 @@
+.container {
+  display: flex;
+
+  height: 100vh;
+  width: 100vw;
+  background-image: url("../../../../public/images/guitar1.jpg");
+  background-repeat: no-repeat;
+  background-position: center;
+  background-size: 100vw 100vh;
+  background-color: rgba(0, 0, 0, 0.6);
+  background-blend-mode: multiply;
+}
+
+.title {
+  color: rgba(238, 238, 238, 0.938);
+  margin: auto;
+  padding-bottom: 130px;
+  text-shadow: 2px 1px 4px black;
+  font-family: "Roboto", sans-serif;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+
+@media (max-width: 900px) {
+  .container {
+    height: 70vh;
+    object-fit: cover;
+    flex-direction: column;
+  }
+}
+
+@media (max-width: 750px) {
+  .container {
+    background-image: none;
+    height: 5rem;
+    width: auto;
+    margin-top: 5rem;
+    background-color: white;
+  }
+  .title {
+    color: black;
+  }
+}

@@ -1,0 +1,20 @@
+.cart-summary-container {
+  width: 100%;
+}
+
+.cart-summary-price {
+  display: flex;
+  justify-content: space-between;
+  border-top: 1px solid rgb(214, 202, 202);
+  padding-top: 1rem;
+}
+
+.cart-summary-price > p {
+  padding-top: 0.1rem;
+  align-items: center;
+}
+
+.cart-summary-price > h4 {
+  /* font-weight: 600; */
+  font-family: cursive, sans-serif;
+}

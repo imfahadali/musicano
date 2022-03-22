@@ -1,0 +1,12 @@
+.product-container {
+  display: flex;
+  justify-content: center;
+}
+.center-spinner {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 90vh;
+  font-size: small;
+  size: small;
+}

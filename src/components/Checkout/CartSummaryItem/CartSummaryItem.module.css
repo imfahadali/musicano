@@ -1,0 +1,22 @@
+.cart-summary-item {
+  display: flex;
+  margin: 1rem;
+  justify-content: space-between;
+}
+
+.cart-summary-item > span > sup {
+  font-weight: bold;
+}
+
+.cart-summary-item > span > img {
+  width: 100px;
+  height: 100px;
+  object-fit: contain;
+}
+
+.cart-summary-item > h6 {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  font-family: cursive, sans-serif;
+}
